@@ -73,6 +73,8 @@ $language_data = array (
         'public', 'protected', 'private', 'uses', 'module', 'endmodule', 'static', 'readonly', 'implement', 
         'debug', 'library_once', 'optional', 'initializer', 'operator', 'hook', 'stub', 'interface', 
         'endinterface', 'delegate', 'needs',
+        // cohadar
+        'for', 'endfor', 'while', 'endwhile',
       )
     ),
     // types
