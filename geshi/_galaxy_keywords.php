@@ -8,7 +8,7 @@ $language_words = array(
     'include', 'while', 'return', 'if', 'else'
   ),
   'types' => array(
-    'const', 'fixed', 'void', 
+    'const', 'fixed', 'void', 'native', 
     'int', 'bool', 
     'playergroup', 'trigger', 'string', 'color', 'text', 'unit', 'unitgroup', 'point', 'region', 
     'camerainfo', 'order', 'abilcmd', 'timer', 'soundlink', 'transmissionsource', 'unitfilter', 
