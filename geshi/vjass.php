@@ -67,7 +67,7 @@ $language_data = array (
   'KEYWORDS' => array(
     // blocks, keywords
     1 => array_merge(
-      $jass['blocks'],
+      $language_words['blocks'],
       array(
         'requires' , 'struct', 'endstruct', 'method', 'endmethod', 'scope', 'endscope', 'library', 'endlibrary', 
         'public', 'protected', 'private', 'uses', 'module', 'endmodule', 'static', 'readonly', 'implement', 
@@ -78,20 +78,20 @@ $language_data = array (
       )
     ),
     // types
-    2 => array_merge($jass['types'], array(
+    2 => array_merge($language_words['types'], array(
       'thistype', 
       'key',
     )),
     // values
-    3 => array_merge($jass['values'], array(
+    3 => array_merge($language_words['values'], array(
       'super', 
       'this',
     )),
     // natives
-    4 => $jass['natives'],
-    5 => $jass['constants'],
-    6 => $jass['bj_constants'],
-    7 => $jass['bj_functions'],
+    4 => $language_words['natives'],
+    5 => $language_words['constants'],
+    6 => $language_words['bj_constants'],
+    7 => $language_words['bj_functions'],
   ),
   'SYMBOLS' => array( // , ( ) [ ] . / * + - = " ' 
     '+', '-', '*', '/', 
