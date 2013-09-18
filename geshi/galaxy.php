@@ -30,7 +30,8 @@ $language_data = array (
         //Multiline-continued single-line comments
         1 => '/\/\/(?:\\\\\\\\|\\\\\\n|.)*$/m',
         //Multiline-continued preprocessor define
-        2 => '/#(?:\\\\\\\\|\\\\\\n|.)*$/m'
+        2 => '/#(?:\\\\\\\\|\\\\\\n|.)*$/m',
+        3 => '#\\@.*?\\@#'
         ),
     'CASE_KEYWORDS' => GESHI_CAPS_NO_CHANGE,
     'QUOTEMARKS' => array("'", '"'),
@@ -82,7 +83,8 @@ $language_data = array (
         'COMMENTS' => array(
             1 => 'color: #666666; font-style: italic;',
             2 => 'color: #339933;',
-            'MULTI' => 'color: #808080; font-style: italic;'
+            'MULTI' => 'color: #808080; font-style: italic;',
+            3 => 'color: red; font-weight: bold;'
             ),
         'ESCAPE_CHAR' => array(
             0 => 'color: #000099; font-weight: bold;',
