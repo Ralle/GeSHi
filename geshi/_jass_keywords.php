@@ -811,5 +811,17 @@ $language_words = array(
     'UpdateEachStockBuildingEnum', 'UpdateEachStockBuilding', 'PerformStockUpdates', 'StartStockUpdates',
     'RemovePurchasedItem', 'InitNeutralBuildings', 'MarkGameStarted', 'DetectGameStarted', 'InitBlizzard',
     'RandomDistReset', 'RandomDistAddItem', 'RandomDistChoose', 'UnitDropItem', 'WidgetDropItem', 
+
+    'LoadRealBJ', 'LoadIntegerBJ', 'LoadBooleanBJ', 'LoadStringBJ', 'LoadPlayerHandleBJ', 'LoadWidgetHandleBJ',
+    'LoadDestructableHandleBJ', 'LoadItemHandleBJ', 
+    'LoadUnitHandleBJ', 'LoadAbilityHandleBJ', 'LoadTimerHandleBJ', 'LoadTriggerHandleBJ',
+    'LoadTriggerConditionHandleBJ', 'LoadTriggerActionHandleBJ', 'LoadTriggerEventHandleBJ', 'LoadForceHandleBJ',
+    'LoadGroupHandleBJ', 'LoadLocationHandleBJ', 'LoadRectHandleBJ', 'LoadBooleanExprHandleBJ',
+    'LoadSoundHandleBJ', 'LoadEffectHandleBJ', 'LoadUnitPoolHandleBJ', 'LoadItemPoolHandleBJ',
+    'LoadQuestHandleBJ', 'LoadQuestItemHandleBJ', 'LoadDefeatConditionHandleBJ', 'LoadTimerDialogHandleBJ',
+    'LoadLeaderboardHandleBJ', 'LoadMultiboardHandleBJ', 'LoadMultiboardItemHandleBJ', 'LoadTrackableHandleBJ',
+    'LoadDialogHandleBJ', 'LoadButtonHandleBJ', 'LoadTextTagHandleBJ', 'LoadLightningHandleBJ',
+    'LoadImageHandleBJ', 'LoadUbersplatHandleBJ', 'LoadRegionHandleBJ', 'LoadFogStateHandleBJ',
+    'LoadFogModifierHandleBJ', 'LoadHashtableHandleBJ', 'HaveSavedValue', 
   ),
 );

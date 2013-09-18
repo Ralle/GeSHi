@@ -41,7 +41,7 @@
 9: jass_bjFunction
 */
 
-require_once __DIR__ . '/_jass_keywords.php';
+require __DIR__ . '/_jass_keywords.php';
 
 $language_data = array (
   'LANG_NAME' => 'vJASS',

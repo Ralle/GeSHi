@@ -20,7 +20,7 @@
  *
  ************************************************************************************/
 
-require_once __DIR__ . '/_galaxy_keywords.php';
+require __DIR__ . '/_galaxy_keywords.php';
 
 $language_data = array (
     'LANG_NAME' => 'Galaxy',
