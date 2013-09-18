@@ -50,7 +50,9 @@ $language_data = array (
     2 => "//",
     ),
   'COMMENT_MULTI' => array('/*' => '*/'),
-  // 'COMMENT_REGEXP' => array(2 => "/\[(=*)\[.*?\]\1\]/s"),
+  'COMMENT_REGEXP' => array(
+    3 => '#\\@.*?\\@#'
+  ),
   'CASE_KEYWORDS' => GESHI_CAPS_NO_CHANGE,
   'QUOTEMARKS' => array("'", '"'),
   'ESCAPE_CHAR' => '',
@@ -111,6 +113,19 @@ $language_data = array (
     8 => true,
     9 => true,
     ),
+  'URLS' => array(
+    ),
+  'OOLANG' => true,
+  'OBJECT_SPLITTERS' => array(
+    1 => '.',
+    ),
+  'REGEXPS' => array(
+    ),
+  'STRICT_MODE_APPLIES' => GESHI_NEVER,
+  'SCRIPT_DELIMITERS' => array(
+    ),
+  'HIGHLIGHT_STRICT_BLOCK' => array(
+    ),
   'STYLES' => array(
     'KEYWORDS' => array(
       1 => 'font-weight: bold',
@@ -124,7 +139,8 @@ $language_data = array (
     'COMMENTS' => array(
       1 => 'color: #993300;',
       2 => 'color: #009933;',
-      'MULTI' => 'color: #009933;'
+      'MULTI' => 'color: #009933;',
+      3 => 'color: red; font-weight: bold;'
       ),
     'ESCAPE_CHAR' => array(
       0 => '',
@@ -151,24 +167,6 @@ $language_data = array (
     'SCRIPT' => array(
       )
     ),
-  'URLS' => array(
-    1 => '',
-    2 => '',
-    3 => '',
-    4 => '',
-    5 => ''
-    ),
-  'OOLANG' => true,
-  'OBJECT_SPLITTERS' => array(
-    1 => '.',
-    ),
-  'REGEXPS' => array(
-    ),
-  'STRICT_MODE_APPLIES' => GESHI_NEVER,
-  'SCRIPT_DELIMITERS' => array(
-    ),
-  'HIGHLIGHT_STRICT_BLOCK' => array(
-    )
 );
 
 ?>
