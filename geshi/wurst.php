@@ -1,13 +1,13 @@
 <?php
 /*************************************************************************************
- * jass.php
+ * wurst.php
  * -------
- * Author: Rasmus Abrahamsen (ralleab@gmail.com)
- * Copyright: (c) 2011 Rasmus Abrahamsen (http://www.hiveworkshop.com)
+ * Author: peq (Peter.peq@gmail.com)
+ * Copyright: none
  * Release Version: 1
- * Date Started: 2011/14/09
+ * Date Started: 2014/20/01
  *
- * JASS language file for GeSHi.
+ * Wurst language file for GeSHi.
  *
  *************************************************************************************
  *
@@ -41,13 +41,12 @@
 9: jass_bjFunction
 */
 
-require __DIR__ . '/_jass_keywords.php';
+
 
 $language_data = array (
-  'LANG_NAME' => 'vJASS',
+  'LANG_NAME' => 'wurst',
   'COMMENT_SINGLE' => array(
-    1 => '//!',
-    2 => "//",
+    1 => '//',
     ),
   'COMMENT_MULTI' => array('/*' => '*/'),
   'COMMENT_REGEXP' => array(
@@ -68,32 +67,40 @@ $language_data = array (
     GESHI_NUMBER_FLT_SCI_SHORT | GESHI_NUMBER_FLT_SCI_ZERO,
   'KEYWORDS' => array(
     // blocks, keywords
-    1 => array_merge(
-      $language_words['blocks'],
-      array(
-        'requires' , 'struct', 'endstruct', 'method', 'endmethod', 'scope', 'endscope', 'library', 'endlibrary', 
-        'public', 'protected', 'private', 'uses', 'module', 'endmodule', 'static', 'readonly', 'implement', 
-        'debug', 'library_once', 'optional', 'initializer', 'operator', 'hook', 'stub', 'interface', 
-        'endinterface', 'delegate', 'needs',
-        // cohadar
-        'for', 'endfor', 'while', 'endwhile',
-      )
+    1 => array("class", "return", "if", "else", "while", "for", "in", "break", "new", "null",
+		"package", "endpackage", "function", "returns", "public", "private", "protected", "import", "native", "nativetype", "extends",
+		"interface", "implements", "module", "use", "abstract", "static", "thistype", "override", "immutable", "it", "array", "and",
+		"or", "not", "this", "construct", "ondestroy", "destroy", "type", "constant", "endfunction", "nothing", "init", "castTo",
+		"tuple", "div", "mod", "let", "from", "to", "downto", "step", "endpackage", "skip", "true", "false", "var", "instanceof",
+		"super", "enum", "switch", "case", "default", "typeId", "begin", "end"
     ),
     // types
-    2 => array_merge($language_words['types'], array(
-      'thistype', 
-      'key',
-    )),
+    2 => array("int", "integer", "real", "code", "boolean", "string",
+		"agent",  "event",  "player",  "widget",  "unit",  "destructable", 
+		 "item",  "ability",  "buff",  "force",  "group", 
+		 "trigger",  "triggercondition",  "triggeraction",  "timer",  "location", 
+		 "region",  "rect",  "boolexpr",  "sound",  "conditionfunc", 
+		 "filterfunc",  "unitpool",  "itempool",  "race",  "alliancetype", 
+		 "racepreference",  "gamestate",  "igamestate",  "fgamestate",  "playerstate", 
+		 "playerscore",  "playergameresult",  "unitstate",  "aidifficulty",  "eventid", 
+		 "gameevent",  "playerevent",  "playerunitevent",  "unitevent",  "limitop", 
+		 "widgetevent",  "dialogevent",  "unittype",  "gamespeed",  "gamedifficulty", 
+		 "gametype",  "mapflag",  "mapvisibility",  "mapsetting",  "mapdensity", 
+		 "mapcontrol",  "playerslotstate",  "volumegroup",  "camerafield",  "camerasetup", 
+		 "playercolor",  "placement",  "startlocprio",  "raritycontrol",  "blendmode", 
+		 "texmapflags",  "effect",  "effecttype",  "weathereffect",  "terraindeformation", 
+		 "fogstate",  "fogmodifier",  "dialog",  "button",  "quest", 
+		 "questitem",  "defeatcondition",  "timerdialog",  "leaderboard",  "multiboard", 
+		 "multiboarditem",  "trackable",  "gamecache",  "version",  "itemtype", 
+		 "texttag",  "attacktype",  "damagetype",  "weapontype",  "soundtype", 
+		 "lightning",  "pathingtype",  "image",  "ubersplat",  "hashtable"),
     // values
-    3 => array_merge($language_words['values'], array(
-      'super', 
-      'this',
-    )),
+    3 => array(),
     // natives
-    4 => $language_words['natives'],
-    5 => $language_words['constants'],
-    6 => $language_words['bj_constants'],
-    7 => $language_words['bj_functions'],
+    4 => array(),
+    5 => array(),
+    6 => array(),
+    7 => array(),
   ),
   'SYMBOLS' => array( // , ( ) [ ] . / * + - = " ' 
     '+', '-', '*', '/', 
