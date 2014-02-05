@@ -43,8 +43,14 @@
 
 require __DIR__ . '/_vjass_keywords.php';
 
+$language_words_wurst = $language_words_vjass;
+
+$language_words_wurst["blocks"] = array_merge($language_words_vjass["blocks"], array('class', 'while', 'for', 'in', 'break', 'package', 'endpackage', 'protected', 'import', 'nativetype', 'use', 'abstract', 'override', 'immutable', 'it', 'construct', 'ondestroy', 'destroy', 'init', 'castTo', 'tuple', 'div', 'mod', 'let', 'from', 'to', 'downto', 'step', 'endpackage', 'skip', 'instanceof', 'enum', 'switch', 'case', 'default', 'typeId', 'begin', 'end'));
+$language_words_wurst["types"] = array_merge($language_words_vjass["types"], array('var','int','bool'));
+$language_words_wurst["values"] = array_merge($language_words_vjass["values"],  array('new'));
+
 $language_data = array (
-  'LANG_NAME' => 'vJASS',
+  'LANG_NAME' => 'WurstScript',
   'COMMENT_SINGLE' => array(
     1 => '//!',
     2 => "//",
@@ -68,16 +74,16 @@ $language_data = array (
     GESHI_NUMBER_FLT_SCI_SHORT | GESHI_NUMBER_FLT_SCI_ZERO,
   'KEYWORDS' => array(
     // blocks, keywords
-    1 => $language_words_vjass['blocks'],
+    1 => $language_words_wurst["blocks"],
     // types
-    2 => $language_words_vjass['types'],
+    2 => $language_words_wurst["types"],
     // values
-    3 => $language_words_vjass['values'],
+    3 => $language_words_wurst["values"],
     // natives
-    4 => $language_words_vjass['natives'],
-    5 => $language_words_vjass['constants'],
-    6 => $language_words_vjass['bj_constants'],
-    7 => $language_words_vjass['bj_functions'],
+    4 => $language_words_wurst['natives'],
+    5 => $language_words_wurst['constants'],
+    6 => $language_words_wurst['bj_constants'],
+    7 => $language_words_wurst['bj_functions'],
   ),
   'SYMBOLS' => array( // , ( ) [ ] . / * + - = " ' 
     '+', '-', '*', '/', 

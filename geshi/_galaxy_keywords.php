@@ -1,6 +1,6 @@
 <?php
 
-$language_words = array(
+$language_words_galaxy = array(
   'values' => array(
     'null', 'false', 'true',
   ),

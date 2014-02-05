@@ -53,10 +53,10 @@ $language_data = array (
         GESHI_NUMBER_OCT_PREFIX | GESHI_NUMBER_HEX_PREFIX | GESHI_NUMBER_FLT_NONSCI |
         GESHI_NUMBER_FLT_NONSCI_F | GESHI_NUMBER_FLT_SCI_SHORT | GESHI_NUMBER_FLT_SCI_ZERO,
     'KEYWORDS' => array(
-        1 => $language_words['blocks'],
-        2 => $language_words['values'],
-        3 => $language_words['natives'],
-        4 => $language_words['types'],
+        1 => $language_words_galaxy['blocks'],
+        2 => $language_words_galaxy['values'],
+        3 => $language_words_galaxy['natives'],
+        4 => $language_words_galaxy['types'],
     ),
     'SYMBOLS' => array(
         '(', ')', '{', '}', '[', ']',

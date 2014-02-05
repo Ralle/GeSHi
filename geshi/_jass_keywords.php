@@ -1,6 +1,6 @@
 <?php
 
-$language_words = array(
+$language_words_jass = array(
   'values' => array(
     'false', 'true', 'null', 
   ),
