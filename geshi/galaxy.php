@@ -20,7 +20,8 @@
  *
  ************************************************************************************/
 
-require __DIR__ . '/_galaxy_keywords.php';
+require_once __DIR__ . '/_galaxy_keywords.php';
+$language_words_galaxy = $GLOBALS['language_words_galaxy'];
 
 $language_data = array (
     'LANG_NAME' => 'Galaxy',

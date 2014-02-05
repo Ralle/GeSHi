@@ -825,3 +825,5 @@ $language_words_jass = array(
     'LoadFogModifierHandleBJ', 'LoadHashtableHandleBJ', 'HaveSavedValue', 
   ),
 );
+
+$GLOBALS['language_words_jass'] = $language_words_jass;

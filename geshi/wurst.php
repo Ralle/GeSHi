@@ -41,10 +41,10 @@
 9: jass_bjFunction
 */
 
-require __DIR__ . '/_vjass_keywords.php';
+require_once __DIR__ . '/_vjass_keywords.php';
+$language_words_vjass = $GLOBALS['language_words_vjass'];
 
 $language_words_wurst = $language_words_vjass;
-
 $language_words_wurst["blocks"] = array_merge($language_words_vjass["blocks"], array('class', 'while', 'for', 'in', 'break', 'package', 'endpackage', 'protected', 'import', 'nativetype', 'use', 'abstract', 'override', 'immutable', 'it', 'construct', 'ondestroy', 'destroy', 'init', 'castTo', 'tuple', 'div', 'mod', 'let', 'from', 'to', 'downto', 'step', 'endpackage', 'skip', 'instanceof', 'enum', 'switch', 'case', 'default', 'typeId', 'begin', 'end'));
 $language_words_wurst["types"] = array_merge($language_words_vjass["types"], array('var','int','bool'));
 $language_words_wurst["values"] = array_merge($language_words_vjass["values"],  array('new'));

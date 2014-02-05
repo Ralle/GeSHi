@@ -684,3 +684,5 @@ $language_words_galaxy = array(
       'AIUnitGroupGetValidOrder',
   ),
 );
+
+$GLOBALS['language_words_galaxy'] = $language_words_galaxy;
