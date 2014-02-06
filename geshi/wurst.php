@@ -29,35 +29,22 @@
  *
  ************************************************************************************/
 
-/*
-1: jass_keyword
-2: jass_primitiveType
-3: jass_nativeType
-4: jass_constantNativeFunction
-5: jass_constant
-6: jass_nativeFunction
-7: jass_bjConstant
-8: jass_bjVariable
-9: jass_bjFunction
-*/
-
 require_once __DIR__ . '/_vjass_keywords.php';
 $language_words_vjass = $GLOBALS['language_words_vjass'];
 
 $language_words_wurst = $language_words_vjass;
-$language_words_wurst["blocks"] = array_merge($language_words_vjass["blocks"], array('class', 'while', 'for', 'in', 'break', 'package', 'endpackage', 'protected', 'import', 'nativetype', 'use', 'abstract', 'override', 'immutable', 'it', 'construct', 'ondestroy', 'destroy', 'init', 'castTo', 'tuple', 'div', 'mod', 'let', 'from', 'to', 'downto', 'step', 'endpackage', 'skip', 'instanceof', 'enum', 'switch', 'case', 'default', 'typeId', 'begin', 'end'));
-$language_words_wurst["types"] = array_merge($language_words_vjass["types"], array('var','int','bool'));
+$language_words_wurst["blocks"] = array_merge($language_words_vjass["blocks"], array('var', 'let', 'class', 'while', 'for', 'in', 'break', 'package', 'endpackage', 'protected', 'import', 'nativetype', 'use', 'abstract', 'override', 'immutable', 'it', 'construct', 'ondestroy', 'destroy', 'init', 'castTo', 'tuple', 'div', 'mod', 'let', 'from', 'to', 'downto', 'step', 'endpackage', 'skip', 'instanceof', 'enum', 'switch', 'case', 'default', 'typeId', 'begin', 'end'));
+$language_words_wurst["types"] = array_merge($language_words_vjass["types"], array('int','bool'));
 $language_words_wurst["values"] = array_merge($language_words_vjass["values"],  array('new'));
 
 $language_data = array (
   'LANG_NAME' => 'WurstScript',
   'COMMENT_SINGLE' => array(
-    1 => '//!',
-    2 => "//",
+    1 => "//",
     ),
   'COMMENT_MULTI' => array('/*' => '*/'),
   'COMMENT_REGEXP' => array(
-    3 => '#\\@.*?\\@#'
+    2 => '#\\@.*?\\@#'
   ),
   'CASE_KEYWORDS' => GESHI_CAPS_NO_CHANGE,
   'QUOTEMARKS' => array("'", '"'),
@@ -89,7 +76,8 @@ $language_data = array (
     '+', '-', '*', '/', 
     '==', '~=', '<=', '>=', '<', '>', '=',
     '(', ')', '[', ']',
-    ',', '.'
+    ',', '.',
+    '->'
     ),
   'CASE_SENSITIVE' => array(
     GESHI_COMMENTS => false,
@@ -127,10 +115,9 @@ $language_data = array (
       7 => 'color: #dd4444',
       ),
     'COMMENTS' => array(
-      1 => 'color: #993300;',
-      2 => 'color: #009933;',
+      1 => 'color: #009933;',
       'MULTI' => 'color: #009933;',
-      3 => 'color: red; font-weight: bold;'
+      2 => 'color: red; font-weight: bold;'
       ),
     'ESCAPE_CHAR' => array(
       0 => '',
